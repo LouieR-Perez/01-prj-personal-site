@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Simple Icons CDN for skill logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v8/font/simple-icons.min.css">
 </head>
 <body>
   <!-- Hero Section -->
@@ -27,13 +29,36 @@
   <!-- Skills Section -->
   <section class="skills">
     <h2>My Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (learning)</li>
-      <li>Teamwork</li>
-      <li>Problem Solving</li>
-    </ul>
+    <div class="skills-list">
+      <div class="skill-item">
+        <i class="si si-html5" title="HTML5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <i class="si si-css3" title="CSS3"></i>
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <i class="si si-javascript" title="JavaScript"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <i class="si si-typescript" title="TypeScript"></i>
+        <span>TypeScript</span>
+      </div>
+      <div class="skill-item">
+        <i class="si si-react" title="React"></i>
+        <span>React</span>
+      </div>
+      <div class="skill-item">
+        <i class="si si-java" title="Java"></i>
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <i class="si si-c" title="C"></i>
+        <span>C/C++</span>
+      </div>
+    </div>
   </section>
 
   <!-- Projects Section -->
@@ -59,9 +84,17 @@
   <!-- Contact Section -->
   <section class="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:Lreyperez18@gmail.com">Lreyperez18@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/luis-rey-perez" target="_blank">luis-rey-perez</a></p>
-    <p>GitHub: <a href="https://github.com/LouieR-Perez" target="_blank">LouieR-Perez</a></p>
+    <div class="contact-icons">
+      <a href="mailto:Lreyperez18@gmail.com" target="_blank" title="Email">
+        <i class="si si-gmail"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/luis-rey-perez" target="_blank" title="LinkedIn">
+        <i class="si si-linkedin"></i>
+      </a>
+      <a href="https://github.com/LouieR-Perez" target="_blank" title="GitHub">
+        <i class="si si-github"></i>
+      </a>
+    </div>
   </section>
 </body>
 </html>
