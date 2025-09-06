@@ -1,17 +1,21 @@
+/* Make the 'My Skills' heading match the accent color */
+.skills h2 {
+  color: #985E6D;
+}
 
 /* Import Google Fonts for headings */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 
 /* =========================
-   General Page Styles
-   (applies to whole site)
-   ========================= */
+  General Page Styles
+  (applies to whole site)
+  ========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #eaf3fb;
-  color: #1a2233;
+  background: #494E6B; /* deep blue-gray */
+  color: #192231;      /* dark blue for main text */
 }
 
 /* =========================
@@ -20,10 +24,10 @@ body {
 /* Styles for the top navigation bar */
 .site-header {
   width: 100%;
-  background: #eaf3fb;
+  background: #192231; /* darkest blue for header */
   position: static;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(0,80,200,0.04);
+  box-shadow: 0 2px 8px rgba(25,34,49,0.10);
   padding: .8em 0 16px 0;
 }
 .nav {
@@ -45,7 +49,7 @@ body {
   margin: 0;
 }
 .nav a {
-  color: #1a4fa3;
+  color: #98878F; /* muted purple-gray */
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -56,8 +60,8 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 .nav a:hover, .nav a:focus {
-  background: #e0eaff;
-  color: #0d8fff;
+  background: #985E6D; /* accent pinkish */
+  color: #fff;
 }
 
 /* =========================
@@ -65,23 +69,23 @@ body {
    ========================= */
 /* Large intro section with profile image and heading */
 .hero {
-  background: linear-gradient(120deg, #0d8fff 0%, #1a4fa3 100%);
+  background: linear-gradient(120deg, #98878F 0%, #985E6D 100%); /* soft purple to accent pink */
   color: #fff;
   text-align: center;
   padding: 48px 20px 36px 20px;
   min-height: 200px;
 }
 .hero-img {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  border: 4px solid #fff;
-  margin-bottom: 15px;
+  border: 4px solid #98878F;
+  margin-bottom: 18px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
   display: block;
   margin: 0 auto;
-  box-shadow: 0 2px 12px rgba(0, 80, 200, 0.10);
+  box-shadow: 0 2px 16px rgba(0, 80, 200, 0.12);
 }
 
 /* =========================
@@ -89,17 +93,17 @@ body {
    ========================= */
 /* About Me section */
 .bio {
-  background: #fff;
+  background: #98878F; /* very light purple-gray */
   margin: 30px auto 0 auto;
   max-width: 600px;
   padding: 28px 22px;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 80, 200, 0.06);
+  box-shadow: 0 2px 12px rgba(73,78,107,0.10);
 }
 .bio h2 {
   margin-top: 0;
   font-family: 'Poppins', Arial, sans-serif;
-  color: #1a4fa3;
+  color: #985E6D;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -109,7 +113,7 @@ body {
    ========================= */
 /* Skills icons and labels */
 .skills {
-  background: #d6eaff;
+  background: #98878F22; /* very light purple-gray */
   margin: 30px auto 0 auto;
   max-width: 600px;
   padding: 25px 20px;
@@ -134,7 +138,7 @@ body {
 .skill-item i {
   font-size: 2.2em;
   margin-bottom: 6px;
-  color: #1a4fa3;
+  color: #985E6D;
   background: none;
   border-radius: 50%;
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
@@ -142,18 +146,18 @@ body {
 }
 .skill-item span {
   font-size: 1em;
-  color: #1a2233;
+  color: #192231;
   margin-top: 2px;
   transition: color 0.2s, text-shadow 0.2s;
 }
 .skill-item:hover i {
   transform: scale(1.18) rotate(-6deg);
-  box-shadow: 0 0 16px 2px #0d8fff44;
-  background: #e0eaff;
+  box-shadow: 0 0 16px 2px #985E6D44;
+  background: #fff;
 }
 .skill-item:hover span {
-  color: #0d8fff;
-  text-shadow: 0 2px 8px #0d8fff33;
+  color: #985E6D;
+  text-shadow: 0 2px 8px #985E6D33;
 }
 .skills ul {
   list-style: disc inside;
@@ -168,17 +172,17 @@ body {
    ========================= */
 /* Project cards and layout */
 .projects {
-  background: #f0f6ff;
+  background: #98878F22;
   margin: 30px auto 0 auto;
   max-width: 600px;
   padding: 25px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 80, 200, 0.08);
+  box-shadow: 0 4px 16px rgba(152,94,109,0.10);
 }
 .projects h2 {
   margin-top: 0;
   font-family: 'Poppins', Arial, sans-serif;
-  color: #1a4fa3;
+  color: #985E6D;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -188,17 +192,17 @@ body {
   gap: 18px;
 }
 .project-card {
-  background: #e0eaff;
+  background: #98878F;
   border-radius: 8px;
   padding: 18px 16px;
-  box-shadow: 0 2px 8px rgba(0, 80, 200, 0.06);
-  border-left: 5px solid #1a4fa3;
+  box-shadow: 0 2px 8px rgba(152,94,109,0.10);
+  border-left: 5px solid #985E6D;
   transition: box-shadow 0.22s, transform 0.22s;
 }
 
 /* Project card pops out and has a stronger shadow on hover */
 .project-card:hover {
-  box-shadow: 0 8px 32px 0 rgba(13,143,255,0.18), 0 2px 8px rgba(0,80,200,0.10);
+  box-shadow: 0 8px 32px 0 #985E6D33, 0 2px 8px #494E6B22;
   transform: translateY(-6px) scale(1.03);
   z-index: 1;
 }
@@ -206,7 +210,7 @@ body {
   margin: 0 0 8px 0;
   font-size: 1.18em;
   font-family: 'Poppins', Arial, sans-serif;
-  color: #1a4fa3;
+  color: #985E6D;
   text-align: center;
 }
 .project-card p {
@@ -214,7 +218,7 @@ body {
   font-size: 1em;
 }
 .project-card a {
-  color: #0d8fff;
+  color: #985E6D;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.98em;
@@ -222,7 +226,7 @@ body {
 }
 .project-card a:hover {
   text-decoration: underline;
-  color: #1a4fa3;
+  color: #494E6B;
 }
 
 /* =========================
@@ -230,22 +234,22 @@ body {
    ========================= */
 /* Contact icons and links */
 .contact {
-  background: #fff;
+  background: #98878F22; /* very light purple-gray */
   margin: 30px auto 30px auto;
   max-width: 600px;
   padding: 12px 22px;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 80, 200, 0.06);
+  box-shadow: 0 2px 12px rgba(73,78,107,0.10);
   text-align: center;
 }
 .contact h2 {
   font-family: 'Poppins', Arial, sans-serif;
-  color: #1a4fa3;
+  color: #985E6D;
   letter-spacing: 1px;
   text-align: center;
 }
 .contact a {
-  color: #0d8fff;
+  color: #985E6D;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -258,7 +262,7 @@ body {
   margin-bottom: 8px;
 }
 .contact-icons a {
-  color: #0d8fff;
+  color: #985E6D;
   text-decoration: none;
   font-size: 2.2em;
   transition: color 0.2s, transform 0.2s;
@@ -267,7 +271,7 @@ body {
   justify-content: center;
 }
 .contact-icons a:hover {
-  color: #1a4fa3;
+  color: #98878F;
   transform: scale(1.18);
 }
 .contact-icons i {
@@ -280,7 +284,7 @@ body {
    ========================= */
 /* Styles for the page footer */
 .footer {
-  background: #1a4fa3;
+  background: #192231;
   color: #fff;
   text-align: center;
   padding: 18px 0 16px 0;
