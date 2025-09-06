@@ -1,4 +1,23 @@
-/* Header and Navigation styles */
+
+/* Import Google Fonts for headings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+/* =========================
+   General Page Styles
+   (applies to whole site)
+   ========================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eaf3fb;
+  color: #1a2233;
+}
+
+/* =========================
+   Header & Navigation
+   ========================= */
+/* Styles for the top navigation bar */
 .site-header {
   width: 100%;
   background: #eaf3fb;
@@ -40,33 +59,11 @@
   background: #e0eaff;
   color: #0d8fff;
 }
-/* Footer section styles */
-.footer {
-  background: #1a4fa3;
-  color: #fff;
-  text-align: center;
-  padding: 18px 0 16px 0;
-  font-size: 1em;
-  margin-top: 40px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-.footer p {
-  margin: 0;
-  letter-spacing: 1px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 
-/* General page styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #eaf3fb;
-  color: #1a2233;
-
-
-/* Hero section styles */
+/* =========================
+   Hero Section
+   ========================= */
+/* Large intro section with profile image and heading */
 .hero {
   background: linear-gradient(120deg, #0d8fff 0%, #1a4fa3 100%);
   color: #fff;
@@ -74,7 +71,6 @@ body {
   padding: 48px 20px 36px 20px;
   min-height: 200px;
 }
-
 .hero-img {
   width: 120px;
   height: 120px;
@@ -88,21 +84,10 @@ body {
   box-shadow: 0 2px 12px rgba(0, 80, 200, 0.10);
 }
 
-.hero-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin-bottom: 15px;
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 2px 12px rgba(0, 80, 200, 0.10);
-}
-}
-
-/* Bio section styles */
+/* =========================
+   Bio Section
+   ========================= */
+/* About Me section */
 .bio {
   background: #fff;
   margin: 30px auto 0 auto;
@@ -111,7 +96,6 @@ body {
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 80, 200, 0.06);
 }
-
 .bio h2 {
   margin-top: 0;
   font-family: 'Poppins', Arial, sans-serif;
@@ -120,7 +104,10 @@ body {
   text-align: center;
 }
 
-/* Skills section styles */
+/* =========================
+   Skills Section
+   ========================= */
+/* Skills icons and labels */
 .skills {
   background: #d6eaff;
   margin: 30px auto 0 auto;
@@ -129,7 +116,6 @@ body {
   border-radius: 12px;
   text-align: center;
 }
-
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -173,12 +159,14 @@ body {
   list-style: disc inside;
   padding-left: 0;
 }
-
 .skills li {
   margin-bottom: 6px;
 }
 
-/* Projects section styles */
+/* =========================
+   Projects Section
+   ========================= */
+/* Project cards and layout */
 .projects {
   background: #f0f6ff;
   margin: 30px auto 0 auto;
@@ -187,7 +175,6 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 80, 200, 0.08);
 }
-
 .projects h2 {
   margin-top: 0;
   font-family: 'Poppins', Arial, sans-serif;
@@ -195,13 +182,11 @@ body {
   letter-spacing: 1px;
   text-align: center;
 }
-
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-
 .project-card {
   background: #e0eaff;
   border-radius: 8px;
@@ -209,7 +194,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 80, 200, 0.06);
   border-left: 5px solid #1a4fa3;
 }
-
 .project-card h3 {
   margin: 0 0 8px 0;
   font-size: 1.18em;
@@ -217,12 +201,10 @@ body {
   color: #1a4fa3;
   text-align: center;
 }
-
 .project-card p {
   margin: 0 0 10px 0;
   font-size: 1em;
 }
-
 .project-card a {
   color: #0d8fff;
   text-decoration: none;
@@ -230,13 +212,15 @@ body {
   font-size: 0.98em;
   transition: color 0.2s;
 }
-
 .project-card a:hover {
   text-decoration: underline;
   color: #1a4fa3;
 }
 
-/* Contact section styles */
+/* =========================
+   Contact Section
+   ========================= */
+/* Contact icons and links */
 .contact {
   background: #fff;
   margin: 30px auto 30px auto;
@@ -246,20 +230,17 @@ body {
   box-shadow: 0 2px 12px rgba(0, 80, 200, 0.06);
   text-align: center;
 }
-
 .contact h2 {
   font-family: 'Poppins', Arial, sans-serif;
   color: #1a4fa3;
   letter-spacing: 1px;
   text-align: center;
 }
-
 .contact a {
   color: #0d8fff;
   text-decoration: none;
   transition: color 0.2s;
 }
-
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -284,4 +265,22 @@ body {
 .contact-icons i {
   font-size: 1em;
   display: block;
+}
+
+/* =========================
+   Footer Section
+   ========================= */
+/* Styles for the page footer */
+.footer {
+  background: #1a4fa3;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0 16px 0;
+  font-size: 1em;
+  margin-top: 40px;
+
+}
+.footer p {
+  margin: 0;
+  letter-spacing: 1px;
 }
