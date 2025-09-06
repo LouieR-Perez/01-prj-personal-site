@@ -1,16 +1,8 @@
-/* Make the 'My Skills' heading match the accent color */
-.skills h2 {
-  color: #985E6D;
-  text-shadow: 0 2px 8px #19223199, 0 1px 0 #192231;
-}
 
 /* Import Google Fonts for headings */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Montserrat:wght@700&display=swap');
 
-/* =========================
-  General Page Styles
-  (applies to whole site)
-  ========================= */
+/* ========== General Page Styles ========== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -19,10 +11,8 @@ body {
   color: #192231;      /* dark blue for main text */
 }
 
-/* =========================
-   Header & Navigation
-   ========================= */
-/* Styles for the top navigation bar */
+/* ========== Header & Navigation ========== */
+/* Sticky header with logo and navigation links */
 .site-header {
   width: 100%;
   background: #192231; /* darkest blue for header */
@@ -89,9 +79,7 @@ body {
   color: #fff;
 }
 
-/* =========================
-   Hero Section
-   ========================= */
+/* ========== Hero Section ========== */
 /* Large intro section with profile image and heading */
 .hero {
   background: linear-gradient(120deg, #98878F 0%, #985E6D 100%); /* soft purple to accent pink */
@@ -113,10 +101,8 @@ body {
   box-shadow: 0 2px 16px rgba(0, 80, 200, 0.12);
 }
 
-/* =========================
-   Bio Section
-   ========================= */
-/* About Me section */
+/* ========== Bio Section ========== */
+/* About Me section styles */
 .bio {
   background: #98878F; /* very light purple-gray */
   margin: 30px auto 0 auto;
@@ -134,9 +120,7 @@ body {
   text-shadow: 0 2px 8px #F6F7FA, 0 1px 0 #192231;
 }
 
-/* =========================
-   Skills Section
-   ========================= */
+/* ========== Skills Section ========== */
 /* Skills icons and labels */
 .skills {
   background: #98878F22; /* very light purple-gray */
@@ -146,11 +130,15 @@ body {
   border-radius: 12px;
   text-align: center;
 }
+.skills h2 {
+  color: #985E6D;
+  text-shadow: 0 2px 8px #19223199, 0 1px 0 #192231;
+}
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 28px;
+  gap: 28px 0;
   margin-top: 18px;
   margin-bottom: 8px;
 }
@@ -159,7 +147,10 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: 1em;
-  min-width: 70px;
+  min-width: 120px;
+  flex: 1 1 33%;
+  max-width: 33%;
+  box-sizing: border-box;
 }
 .skill-item i {
   font-size: 2.2em;
@@ -169,21 +160,26 @@ body {
   border-radius: 50%;
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
   padding: 10px;
+  box-shadow: 0 2px 8px #19223133, 0 1px 0 #fff2;
 }
 .skill-item span {
-  font-size: 1em;
+  font-size: 1.08em;
   color: #192231;
-  margin-top: 2px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 6px #985E6D33, 0 1px 0 #19223144;
   transition: color 0.2s, text-shadow 0.2s;
 }
 .skill-item:hover i {
   transform: scale(1.18) rotate(-6deg);
-  box-shadow: 0 0 16px 2px #985E6D44;
+  box-shadow: 0 4px 18px 4px #985E6D55, 0 2px 8px #19223144;
   background: #fff;
 }
 .skill-item:hover span {
   color: #985E6D;
-  text-shadow: 0 2px 8px #985E6D33;
+  text-shadow: 0 2px 12px #985E6D55, 0 1px 0 #985E6D99;
 }
 .skills ul {
   list-style: disc inside;
@@ -193,9 +189,7 @@ body {
   margin-bottom: 6px;
 }
 
-/* =========================
-   Projects Section
-   ========================= */
+/* ========== Projects Section ========== */
 /* Project cards and layout */
 .projects {
   background: #98878F22;
@@ -226,8 +220,6 @@ body {
   border-left: 5px solid #985E6D;
   transition: box-shadow 0.22s, transform 0.22s;
 }
-
-/* Project card pops out and has a stronger shadow on hover */
 .project-card:hover {
   box-shadow: 0 8px 32px 0 #985E6D33, 0 2px 8px #494E6B22;
   transform: translateY(-6px) scale(1.03);
@@ -257,9 +249,7 @@ body {
   color: #494E6B;
 }
 
-/* =========================
-   Contact Section
-   ========================= */
+/* ========== Contact Section ========== */
 /* Contact icons and links */
 .contact {
   background: #98878F22; /* very light purple-gray */
@@ -308,10 +298,8 @@ body {
   display: block;
 }
 
-/* =========================
-   Footer Section
-   ========================= */
-/* Styles for the page footer */
+/* ========== Footer Section ========== */
+/* Footer styles */
 .footer {
   background: #192231;
   color: #fff;
@@ -319,7 +307,6 @@ body {
   padding: 18px 0 16px 0;
   font-size: 1em;
   margin-top: 40px;
-
 }
 .footer p {
   margin: 0;
