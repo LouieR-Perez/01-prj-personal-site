@@ -24,15 +24,15 @@ body {
   position: static;
   z-index: 10;
   box-shadow: 0 2px 8px rgba(0,80,200,0.04);
-  padding: .7em 0 16px 0;
+  padding: .8em 0 16px 0;
 }
 .nav {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 16px 0 16px;
 }
 .nav ul {
   list-style: none;
@@ -193,6 +193,14 @@ body {
   padding: 18px 16px;
   box-shadow: 0 2px 8px rgba(0, 80, 200, 0.06);
   border-left: 5px solid #1a4fa3;
+  transition: box-shadow 0.22s, transform 0.22s;
+}
+
+/* Project card pops out and has a stronger shadow on hover */
+.project-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(13,143,255,0.18), 0 2px 8px rgba(0,80,200,0.10);
+  transform: translateY(-6px) scale(1.03);
+  z-index: 1;
 }
 .project-card h3 {
   margin: 0 0 8px 0;
@@ -225,7 +233,7 @@ body {
   background: #fff;
   margin: 30px auto 30px auto;
   max-width: 600px;
-  padding: 28px 22px;
+  padding: 12px 22px;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 80, 200, 0.06);
   text-align: center;
