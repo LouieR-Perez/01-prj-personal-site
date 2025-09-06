@@ -1,3 +1,45 @@
+/* Header and Navigation styles */
+.site-header {
+  width: 100%;
+  background: #eaf3fb;
+  position: static;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,80,200,0.04);
+  padding: .7em 0 16px 0;
+}
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 32px;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+.nav li {
+  margin: 0;
+}
+.nav a {
+  color: #1a4fa3;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.08em;
+  letter-spacing: 0.5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav a:hover, .nav a:focus {
+  background: #e0eaff;
+  color: #0d8fff;
+}
 /* Footer section styles */
 .footer {
   background: #1a4fa3;
@@ -29,7 +71,8 @@ body {
   background: linear-gradient(120deg, #0d8fff 0%, #1a4fa3 100%);
   color: #fff;
   text-align: center;
-  padding: 40px 20px 30px 20px;
+  padding: 48px 20px 36px 20px;
+  min-height: 200px;
 }
 
 .hero-img {
