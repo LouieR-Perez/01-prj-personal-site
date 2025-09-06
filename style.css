@@ -1,1 +1,177 @@
-/* Add you CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eaf3fb;
+  color: #1a2233;
+}
+
+/* Hero section styles */
+.hero {
+  background: linear-gradient(120deg, #0d8fff 0%, #1a4fa3 100%);
+  color: #fff;
+  text-align: center;
+  padding: 48px 20px 36px 20px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  box-shadow: 0 4px 16px rgba(0, 80, 200, 0.10);
+}
+
+.hero-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 18px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 12px rgba(0, 80, 200, 0.10);
+}
+
+.hero h1 {
+  margin: 12px 0 7px 0;
+  font-size: 2.4em;
+  font-family: 'Poppins', Arial, sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 1.18em;
+  color: #e0eaff;
+}
+
+/* Bio section styles */
+.bio {
+  background: #fff;
+  margin: 30px auto 0 auto;
+  max-width: 600px;
+  padding: 28px 22px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 80, 200, 0.06);
+}
+
+.bio h2 {
+  margin-top: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #1a4fa3;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Skills section styles */
+.skills {
+  background: #d6eaff;
+  margin: 30px auto 0 auto;
+  max-width: 600px;
+  padding: 25px 20px;
+  border-radius: 12px;
+}
+
+.skills h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #1a4fa3;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.skills ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.skills li {
+  margin-bottom: 6px;
+}
+
+/* Projects section styles */
+.projects {
+  background: #f0f6ff;
+  margin: 30px auto 0 auto;
+  max-width: 600px;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 80, 200, 0.08);
+}
+
+.projects h2 {
+  margin-top: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #1a4fa3;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.project-card {
+  background: #e0eaff;
+  border-radius: 8px;
+  padding: 18px 16px;
+  box-shadow: 0 2px 8px rgba(0, 80, 200, 0.06);
+  border-left: 5px solid #1a4fa3;
+}
+
+.project-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.18em;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #1a4fa3;
+  text-align: center;
+}
+
+.project-card p {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+}
+
+.project-card a {
+  color: #0d8fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.98em;
+  transition: color 0.2s;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+  color: #1a4fa3;
+}
+
+/* Contact section styles */
+.contact {
+  background: #fff;
+  margin: 30px auto 30px auto;
+  max-width: 600px;
+  padding: 28px 22px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 80, 200, 0.06);
+}
+
+.contact h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #1a4fa3;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.contact a {
+  color: #0d8fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #1a4fa3;
+}
